@@ -3,7 +3,7 @@ Spring-boot cloud example with eureka, feign client, ribbon as load balancer.
 
 Two microservices: client1 and client2 and eureka as service discovery. 
 
-#######################
+
 Start the eureka project first. Second start the client1 project and client2 project.
 In your browser open http://localhost:8761/ and you should be able to see the eureka ui and that client1 and client2 
 are registered in the: Instances currently registered with Eureka - field.
