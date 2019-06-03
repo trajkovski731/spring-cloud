@@ -4,15 +4,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * Simple rest controller exposing endpoint that returns String text
+ *
+ * @author filip.t
+ * @version 1.0
+ * @since 1.0
+ */
+
 @RestController
 @RequestMapping(value = "/client2")
-public class GreetController {
+public class HelloController {
 
 
-    @GetMapping(value = "/greet")
+    @GetMapping(value = "/hello")
     public String greet() {
         System.out.println("I have been called");
-        return "This is a greeting from client 2";
+        return "Hello from client 2";
     }
 
 }
